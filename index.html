@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Clone - Trang Chủ</title>
+  <link rel="stylesheet" href="./final_internship.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="./final_internship.html">Shop Clone</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav me-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="categoryDropdown" role="button" data-bs-toggle="dropdown">
+              Danh mục
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">Mô hình</a></li>
+              <li><a href="#" class="dropdown-item">Lego</a></li>
+              <li><a href="#" class="dropdown-item">Rubik</a></li>
+              <li><a href="#" class="dropdown-item">Điện thoại</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex w-50 me-auto">
+          <input class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm" />
+          <button class="btn btn-light" type="submit">Tìm</button>
+        </form>
+        <ul class="navbar-nav me-3">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./contact.html"><i class="bi bi-telephone-fill"></i> Liên hệ</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item me-2">
+            <a class="nav-link text-white" href="#"><i class="bi bi-bell-fill"></i> Thông báo</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link text-white" href="./shopping_cart.html"><i class="bi bi-cart-fill"></i> Giỏ hàng (<span
+                id="cart-count">0</span>)</a>
+          </li>
+          <!-- Nếu đã đăng nhập -->
+          <li class="nav-item" id="welcomeUser" style="display: none">
+            <a class="nav-link text-white" href="./account.html"><i class="bi bi-person"></i> Xin chào,
+              <span id="usernameDisplay">User</span></a>
+          </li>
+          <li class="nav-item" id="logoutBtn" style="display: none">
+            <a class="nav-link text-white" href="#" onclick="logout()">Đăng xuất</a>
+          </li>
+          <!-- Nếu chưa đăng nhập -->
+          <li class="nav-item dropdown" id="authMenu">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="userMenu" role="button"
+              data-bs-toggle="dropdown">
+              Tài Khoản
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="./register.html" class="dropdown-item">Đăng ký</a>
+              </li>
+              <li>
+                <a href="./login.html" class="dropdown-item">Đăng nhập</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Danh sách sản phẩm -->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Sản phẩm 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card product-card h-100">
+          <a href="product_information_1.html">
+            <img src="./image/7.png" class="card-img-top zoom-img" alt="Sản phẩm 1" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title hover-title">
+              Rubik Moyu RS3M V5 Phiên bản 2023 có nam châm
+            </h5>
+            <p class="text-danger fw-bold">Giá: 370.000₫</p>
+            <a href="product_information_1.html" class="btn btn-danger">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+      <!-- Sản phẩm 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card product-card h-100">
+          <a href="product_information_2.html">
+            <img src="./image/4.png" class="card-img-top zoom-img" alt="Sản phẩm 2" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title hover-title">
+              Mô hình Luffy Gear 5 kiểu dáng chiến đấu siêu ngầu - Mô hình One
+              Piece
+            </h5>
+            <p class="text-danger fw-bold">Giá: 230.000₫</p>
+            <a href="product_information_2.html" class="btn btn-danger">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+      <!-- Sản phẩm 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card product-card h-100">
+          <a href="product_information_3.html">
+            <img src="./image/6.png" class="card-img-top zoom-img" alt="Sản phẩm 3" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title hover-title">
+              Đồ Chơi Lắp Ráp Cảnh Sát SWAT Mô Hình Đồn Cảnh Sát
+            </h5>
+            <p class="text-danger fw-bold">Giá: 289.000₫</p>
+            <a href="product_information_3.html" class="btn btn-danger">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+      <!-- Sản phẩm 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card product-card h-100">
+          <a href="product_information_4.html">
+            <img src="./image/9.png" class="card-img-top zoom-img" alt="Sản phẩm 4" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title hover-title">
+              Rubik Gan 14 Aurora Maglev Pro Phiên bản giới hạn [Limited
+              Edition]
+            </h5>
+            <p class="text-danger fw-bold">Giá: 2.000.000₫</p>
+            <a href="product_information_4.html" class="btn btn-danger">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+      <!-- Sản phẩm 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card product-card h-100">
+          <a href="product_information_5.html">
+            <img src="./image/10.png" class="card-img-top zoom-img" alt="Sản phẩm 5" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title hover-title">
+              Mô hình Kakashi Hatake trong Naruto Có bản Led siêu đẹp, có hộp
+              màu, cao 28 cm ( Tặng LED or Poster )
+            </h5>
+            <p class="text-danger fw-bold">Giá: 99.000₫</p>
+            <a href="product_information_5.html" class="btn btn-danger">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+      <!-- Sản phẩm 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card product-card h-100">
+          <a href="product_information_6.html">
+            <img src="./image/11.png" class="card-img-top zoom-img" alt="Sản phẩm 6" />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title hover-title">
+              820 CHI TIẾT - HÀNG CHUẨN - BỘ ĐỒ CHƠI XẾP HÌNH Mô Hình Người
+              Sắt, Lắp Ráp Mô Hình Robot Iron men, ROBOT Biến Hình
+            </h5>
+            <p class="text-danger fw-bold">Giá: 279.000₫</p>
+            <a href="product_information_6.html" class="btn btn-danger">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="chatbot-icon">💬</div>
+  <div id="chatbot-container" class="hidden">
+    <div id="chatbot-header">
+      <span>ChatBot</span>
+      <button id="close-btn">&times;</button>
+    </div>
+    <div id="chatbot-body">
+      <div id="chatbot-messages"></div>
+    </div>
+    <div id="chatbot-input-container">
+      <input type="text" id="chatbot-input" placeholder="Type a message" />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Shop Clone. All rights reserved.</p>
+  </footer>
+  <script src="./js/final_internship.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
