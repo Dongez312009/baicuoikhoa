@@ -109,7 +109,7 @@ document.getElementById("order-form").addEventListener("submit", function (e) {
     e.preventDefault();
     alert("Đặt hàng thành công! Cảm ơn bạn đã mua sắm.");
     localStorage.removeItem("cart");
-    window.location.href = "final_internship.html";
+    window.location.href = "index.html";
 });
 document.addEventListener("DOMContentLoaded", loadOrderSummary);
 document.addEventListener("DOMContentLoaded", function () {
