@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("logoutBtn").addEventListener("click", function () {
         localStorage.removeItem("currentUser");
         showAlert("success", "Bạn đã đăng xuất.");
-        setTimeout(() => window.location.href = "final_internship.html", 1500);
+        setTimeout(() => window.location.href = "index.html", 1500);
     });
 });
 document.addEventListener("DOMContentLoaded", function () {
