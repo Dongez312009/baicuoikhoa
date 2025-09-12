@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("currentUser", JSON.stringify(user));
             localStorage.setItem("loggedInUser", user.username); 
             alert("Đăng nhập thành công!");
-            window.location.href = "final_internship.html";
+            window.location.href = "index.html";
         } else {
             errorDiv.textContent = "Tên đăng nhập hoặc mật khẩu không đúng.";
         }
